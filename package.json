@@ -18,6 +18,8 @@
   "homepage": "https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.21.1"
   }
 }
