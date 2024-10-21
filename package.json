@@ -1,0 +1,23 @@
+{
+  "name": "notepad-with-nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs.git"
+  },
+  "author": "AmirrezaAhmadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs/issues"
+  },
+  "homepage": "https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
