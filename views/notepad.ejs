@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Notepad</title>
+  <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Notepad</h1>
+    <div class="notepad-form">
+      <input type="text" id="noteTitle" placeholder="Note title" required>
+      <textarea id="noteContent" placeholder="Write your note here..." required></textarea>
+      <button id="addNoteBtn">Add Note</button>
+      <button id="editNoteBtn" style="display: none;">Save Edit</button>
+    </div>
+    <div class="notes-list">
+      <h2>Your Notes</h2>
+      <ul id="notesContainer"></ul>
+    </div>
+  </div>
+
+  <script src="Javascript/script.js"></script>
+</body>
+</html>

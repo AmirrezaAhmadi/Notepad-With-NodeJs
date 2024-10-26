@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const notepadController = require('../controllers/notepadController');
+const notepadControllers = require('../controllers/notepadController');
 
-router.get('/notepad');
+router.get('/notepad' , notepadControllers.notepadMainController);
 
 module.exports=router;
