@@ -3,24 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Notepad</title>
+  <title>Notepad</title>
   <link rel="stylesheet" href="Css/styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Notepad</h1>
-    <div class="notepad-form">
-      <input type="text" id="noteTitle" placeholder="Note title" required>
-      <textarea id="noteContent" placeholder="Write your note here..." required></textarea>
-      <button id="addNoteBtn">Add Note</button>
-      <button id="editNoteBtn" style="display: none;">Save Edit</button>
-    </div>
+    <form action="/makenote" method="POST" class="notepad-form">
+      <input type="hidden" name="action" value="add" id="actionType">
+      <input type="hidden" name="noteId" id="noteId">
+      
+      <input type="text" name="title" placeholder="Note title" required>
+      <textarea name="content" placeholder="Write your note here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    
     <div class="notes-list">
       <h2>Your Notes</h2>
-      <ul id="notesContainer"></ul>
+      <ul>
+        <% notes.forEach(note => { %>
+          <li>
+            <h3><%= note.title %></h3>
+            <p><%= note.content %></p>
+            <form action="/delete-note/<%= note._id %>" method="POST">
+              <button type="submit" class="delete-btn">Delete</button>
+            </form>
+          </li>
+        <% }) %>
+      </ul>
     </div>
   </div>
-
-  <script src="Javascript/script.js"></script>
 </body>
 </html>
