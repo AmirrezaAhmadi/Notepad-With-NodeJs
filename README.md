@@ -53,7 +53,7 @@ Before starting, please make sure you have installed:
 
 ### Step 1: Clone the repository
 ```bash
-git https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs.git
+git clone https://github.com/AmirrezaAhmadi/Notepad-With-NodeJs.git
 cd Notepad With NodeJs
 ```
 ### Step 2: Install dependencies
